@@ -1,21 +1,212 @@
 body {
-background-color: rgba(13, 207, 117, 0.36);
-  color: black ;
-  display:flex; flex-direction:column; justify-content:center;
-  min-height:100vh;
-}
-
-h1{
+background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0) ;
   text-align: center;
-  color:black
+ 
   
 }
+
+
+
+
+.button {
+  align-self:center;
+}
+
+.header {
+  display:inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  
+color: rgb(12, 112, 46);
+}
+
+
+
+.personalinformation{
+  text-align: center;
+}
+
+
+h1 {
+  position: relative;
+  text-align: center;
+  color:black
+
+}
+
+h1::before
+{
+content: attr(data text);
+position: absolute;
+top: 0%;
+left:0%;
+width: 0%;
+height:100%;
+color: yellow;
+-webkit-text-stroke: 0.3vw rgb(160, 143, 232) ;
+border-right: 2px solid green;
+overflow: hidden;
+animation: animate 6% linear infinite;
+
+
+
+}
+  
+@keyframes animation 
+{
+  0%,10%,100%
+{
+  width: 0%;
+
+}
+70%,90%
+{
+  width: 100%;
+}
+}
+
+.slider{
+overflow: hidden;
+}
+
+.slider figure{
+  position: relative;
+  width: 500%;
+margin: 0%;
+left: 0%;
+animation: 20s slider infinite;
+}
+
+.slider figure img{
+  float: left;
+  width: 20%;
+
+}
+
+@keyframes slider{
+0%{
+  left: 0;
+}
+20%{
+  left:0;
+
+}
+25%{
+  left: -100%;
+
+}
+45%{
+  left: -100%;
+
+}
+50%{
+  left: -200%;
+
+}
+70%{
+  left: -200%;
+
+}
+75%{
+  left: -300%;
+
+}
+95%{
+  left:-300%;
+}
+100%{
+  left: -400%;
+}
+}
+
+
+
+
+
+
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  align-items: end;
+  float:inline-end
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(6, 6, 6);
+}
+
+ 
+  
+
+  
+p{
+  text-align: center;
+}
+
+
+.personal information {
+  display: flex;
+    font-size: 7rem;
+    margin: 1.5rem;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+    align-items: center;
+  
+}
+
+.I{
+  opacity: 0;
+    animation: drop 0.4s linear forwards;
+    color: #00ffff;
+}
+
+.N{
+  opacity: 0;
+    animation: drop 0.4s linear forwards 0.2s;
+    color: #99ffff;
+}
+
+.F{
+  opacity: 0;
+    animation: drop 0.4s linear forwards 0.4s;
+    color: #ccffff;
+}
+
+.O{
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.6s;
+  color: #ffffff;
+}
+
+.R{
+  opacity: 0;
+    animation: drop 0.4s linear forwards 0.8s;
+    color: #de4040;
+}
+
+
+
 
 div {
   text-align: center;
-  color:black
+  color:black;
+  margin-left: auto;
   
+  
+   
 }
+  
+
 
 img{
   display: block;
@@ -23,8 +214,38 @@ img{
   margin-right: auto;
 }
 p1 {
-text-align: left;
+text-align: center;
 }
 keyfeature {
 text-align: center;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.All-in-OneSolution {
+  text-align: center;
+  margin-left: auto;
+  margin: auto;
+  color: rgb(0, 0, 0);
+}
+
+.Nutrientsoptimization{
+  text-align: center;
+  color-scheme: rgb(0, 0, 0) ;
+
 }
